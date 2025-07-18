@@ -270,3 +270,35 @@ footer {
     }
 }
 
+/* TAMANHOS COMO O S8 */
+@media (min-width: 360px) and (max-width: 369px) {
+    
+    #menu {
+        position:absolute;
+        right: 4vh;
+    } 
+    
+    #sobreR8 {
+        font-size: 15px;
+    }
+    #p-model {
+        margin-left: 35px;
+    }
+}
+
+/* TELAS COM O A15 */
+
+@media (min-width: 370px) and (max-width: 389px) {
+    #menu {
+        position:absolute;
+        right: 4vh;
+    } 
+    
+    #sobreR8 {
+        font-size: 15px;
+    }
+    #p-model {
+        margin-left: 50px;
+    }
+
+}
