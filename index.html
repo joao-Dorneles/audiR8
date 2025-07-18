@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audi R8</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <main id="home">
+        <header>
+            <ul id="menu">
+                <li class="lmenu"><a class="linkmenu" href="#sobre">Sobre</a></li>
+                <li class="lmenu"><a class="linkmenu" href="#agendar">Agendar</a></li>
+                <li class="lmenu"><a class="linkmenu" href="#model">Modelo</a></li>
+                <li  class="lmenu"><a class="linkmenu" id="lcomprar" href="#">Comprar</a></li>
+            </ul>
+        </header>
+
+    <video autoplay muted loop playsinline id="bg-video">
+        <source src="./mp4/audir8mobile.mp4" type="video/mp4">Seu Navegador não suporta vídeos em html5.
+    </video>
+
+    
+
+    <div id="content">
+        <p id="Pprincipal"><strong>Sinta a liberdade do <span id="destaqueR8">R8</span></strong></p>
+    </div>
+</main>
+
+    <section id="sobre">
+        <div id="divconheca">
+            <h1 id="conheca">Conheça</h1>
+        </div>
+        <p id="sobreR8">Este é o Audi R8 - mais que um carro, uma declaração. Com seu motor V10 naturalmente aspirado, ele não apenas acelera
+            ... ele ruge. De 0 a 100 km/h em 3,2 segundos. Design esculpido com precisão alemã. Tecnologia que parece o futuro. Fibra de Carbono,
+            tração quattro, alma de pista e presença de cinema.
+        </p>
+
+        
+    </section>
+
+    <section id="agendar">
+        <p id="P-agendar">Agende uma expêriencia com o R8</p>
+        <form>
+            <label>Nome</label>
+            <input type="name" name="name" required placeholder="Informe seu Nome">
+            <label>E-mail</label>
+            <input type="email" name="email" required placeholder="Informeseu Email">
+            <label>Número</label>
+            <input type="number" name="telefone" placeholder="Informe seu telefone (opcional)">
+            <button type="submit" id="enviar">Agendar</button>
+        </form>
+    </section>
+
+    <section id="model">
+        <p id="p-model">Conheça pelo 3D Model</p>
+        <div id="modelo3D">
+            <model-viewer id="audi3D" src="./modelos3D/audi_r8.glb" auto-rotate camera-controls disable-zoom></model-viewer>
+        </div>
+
+    </section>
+
+    <section id="comprar">
+        <button id="b-comprar"><a href="#">Garanta seu R8</a></button>
+
+    </section>
+
+    <footer>
+        ©JD 2025 todos os direitos reservados
+    </footer>
+</body>
+</html>

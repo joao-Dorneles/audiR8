@@ -1,0 +1,258 @@
+html, body {
+    padding: 0px;
+    margin: 0px;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100dvh;
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+
+#home {
+    width: 100%;
+    max-width: 100dvh;
+    height: 100%;
+}
+
+header {
+    display: flex;
+    position: absolute;
+    background-color: none;
+    width: 100%;
+    height: 50px;
+    max-width: 100dvh;
+    justify-content: center;
+    z-index: 1000;
+
+}
+
+#menu {
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    gap: 30px;
+    list-style-type: none;
+    right: 45px;
+}
+
+#bg-video {
+    width: 101%;
+}
+
+a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+#Pprincipal {
+    position: absolute;
+    top: 260px;
+    left: 1px;
+    color: aliceblue;
+    font-size: 30px;
+    font-family: "Rubik mono one", monospace;
+
+}
+
+#destaqueR8 {
+    color: aliceblue;
+    text-shadow: 0 0 10px gray, 0 0 20px rgb(107, 106, 106);
+    font-size: 50px;
+}
+
+#sobre {
+    display: flex;
+    background-color: black;
+    flex-direction: column;
+    width: 101%;
+}
+
+
+#divconheca {
+    display: flex;
+    justify-content: center;
+}
+
+#conheca {
+    color: aliceblue;
+    font-family: "Rubik mono one", monospace;
+}
+
+#sobreR8 {
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+#agendar {
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#P-agendar {
+    font-family: "Rubik mono one", monospace;
+    margin-bottom: 20px;
+    margin-left: 5px;
+}
+
+
+input {
+    margin-bottom: 20px;
+    width: 40vh;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 10px;
+    transition: 0.5s;
+
+}
+
+input:focus {
+    outline: none;
+    border-color: gray;
+}
+
+label {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#enviar {
+    background-color: rgba(0, 0, 0, 0);
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 20vh;
+    height: 5vh;
+}
+
+#model {
+    display: flex;
+    border-top: black;
+    flex-direction: column;
+}
+
+#p-model {
+    font-family: "Rubik mono one", monospace;
+    margin-top: 50px;
+    margin-left: 40px;
+}
+
+#modelo3D {
+    margin-right: 10px;
+}
+
+#audi3D {
+    width: 57vh;
+    height: 57vh;
+}
+
+#comprar {
+    display: flex;
+    justify-content: center;
+
+}
+
+#b-comprar {
+    background-color: rgb(42, 207, 42);
+    border-radius: 5px;
+    color: aliceblue;
+    width: 25vh;
+    height: 7vh;
+    font-size: 20px;
+    border: 2px solid green !important;
+    box-shadow: 0 0 30px green;
+}
+
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    margin-left: 85px;
+    margin-top: 50px;
+
+}
+
+/* TELAS DO TAMNHO DO IPHONE XR */
+
+@media(min-width: 414px) {
+    #menu {
+        left: 10px;
+    }
+
+    #p-model {
+        margin-left: 65px;
+        width: 300px;
+    }
+
+    #audi3D {
+        width: 50vh;
+        margin-right: 20px;
+    }
+
+    #b-comprar {
+        width: 25vh;
+        height: 7vh;
+        margin-left: 10px;
+    }
+
+    footer {
+        font-size: 15px;
+        width: 300px;
+        margin-right: 20px;
+    }
+}
+
+/* TELAS COMO A DO IPHONE 12 PRO */
+
+@media (min-width: 390px) {
+    #p-model {
+        margin-left: 55px;
+    }
+
+    #audi3D {
+        width: 45vh;
+        margin-right: 20px;
+    }
+
+    footer {
+        font-size: 15px;
+        margin-right: 0px;
+        margin-left: 70px;
+    }
+}
+
+/* TELAS COMO A DO IPHONE 14 PRO MAX */
+
+@media (min-width: 430px) {
+    #p-model {
+        margin-left: 37px;
+        margin-right: 0px;
+        font-size: 20px;
+        width: 370px;
+    }
+
+    #b-comprar {
+        font-size: 25px;
+    }
+
+    footer {
+        margin-right: 0px;
+        margin-left: 65px;
+        font-size: large;
+        width: 400px;
+
+    }
+
+}
