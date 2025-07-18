@@ -254,5 +254,19 @@ footer {
         width: 400px;
 
     }
-
 }
+
+/* TAMNHOS COMO O DO PIXEL 7 */
+
+@media (min-width: 412px) and (max-width: 413px) {
+    #menu {
+        margin-right: 15px;
+    }
+    #sobreR8 {
+        font-size: medium;
+    }
+    #p-model {
+        margin-left: 60px;
+    }
+}
+
